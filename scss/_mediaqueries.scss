@@ -1,0 +1,129 @@
+
+/*:::::MEDIA QUERI PAGINA GALERIA*/
+
+@media only screen and (max-width: 768px) {
+        /* Estilos para dispositivos con un ancho máximo de 768 píxeles */
+        .header_menu {
+        flex-direction: column;
+        }
+        .header_item {
+        margin-bottom: 10px;
+        }
+        .titulo_galeria {
+        font-size: 28px;
+        }
+        .fotos {
+        display: block;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+        /*Estilos para dispositivos con un ancho máximo de 480 píxeles */
+        .header_logo {
+        width: 50%;
+        }
+        .header_item {
+        font-size: 14px;
+        }
+        .titulo_galeria {
+        font-size: 24px;
+        }
+        .fotos {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+/*:::::MEDIA QUERI PAGINA INDEX*/
+
+@media screen and (max-width: 768px) {
+    /*Estilos ara dispositivos con un ancho máximo de 768px */
+    .header_menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    }
+    .header_item {
+    margin: 10px 0;
+    }
+    .header_logo {
+    margin-bottom: 20px;
+    }
+    .header_nav {
+    background-color: #fff;
+    padding: 10px;
+    }
+    .logo {
+    width: 50%;
+    margin: auto;
+    display: block;
+    }
+    .logo2 {
+    width: 40%;
+    margin: auto;
+    display: block;
+    }
+    h1 {
+    font-size: 2em;
+    text-align: center;
+    }
+    .hinchas {
+    width: 100%;
+    }
+}
+
+
+/*:::::MEDIA QUERI PAGINA HISTORIA*/
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .texto .row {
+      display: inline-block;
+      font-size: x-small;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin:0 auto;
+    }
+  }
+
+
+/*:::::MEDIA QUERI PAGINA ASOCIATE*/
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+
+.formulario_titulo{
+    font-size:70px;
+}
+.formulario{
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.formulario_texto{
+    display: block;
+}
+ .formulario_logo{
+      width: 180px;
+      display:inline-flex;
+      transform: scale(0.6,0.6);
+    }
+
+.formulario input{
+    width: 20%;
+}
+    
+  }
+  

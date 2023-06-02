@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.home {
+    padding: 1rem;
+    .home_video{
+        font-size:70px;
+        padding: 3%;
+        text-align: center;
+        color:goldenrod;
+        font-family: 'Lobster', cursive;
+        text-shadow: 2px 2px cornsilk;
+    }
+    }
+    
+    .video {
+        position: relative;
+        padding: 0%;
+        margin: 0 auto;
+        text-align: center;
+        iframe {
+        width: 660px;
+        height: 315px;
+    }
+}
+    
+    .home_boton {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+        border-style: groove;
+        font-size: 30px;
+        background: rgb(26,18,84);
+        background: rgb(26,18,84);
+        background: linear-gradient(90deg, rgba(26,18,84,1) 0%, rgba(200,169,44,1) 0%, rgba(252,252,7,1) 17%, rgba(250,248,8,1) 18%, rgba(210,180,24,1) 41%, rgba(240,233,10,1) 57%, rgba(232,230,36,1) 66%, rgba(190,191,20,1) 85%, rgba(203,190,1,1) 100%, rgba(255,215,6,1) 100%, rgba(30,31,120,1) 100%, rgba(59,53,228,1) 100%, rgba(238,244,112,1) 100%, rgba(97,96,93,1) 100%);
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        &:hover{
+            transition: all 3s;
+            background: silver;
+            width: 40%;
+            font-size: 18px;
+        }
+    .home_texto {
+        text-decoration: none;
+        color:rgb(44, 43, 43);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        &:hover {
+            transition: all 3s;
+            width: 40%;
+            font-size: 18px;
+            }
+        }
+    }
+
+    .home_pie {
+        padding: 4rem;
+        font-size:120px;
+        color:silver;
+        text-shadow: 2px 2px gray;
+        font-family: 'Foldit', cursive;
+    }
+    .home_cuervo {
+        display: flex;
+        padding: 1rem;
+        margin-top: 5rem;
+        border: none;
+        opacity: 1;
+        padding: 3rem;
+        .home_logo1{
+            width: 35%;
+            opacity: 1;
+            border:none;
+            margin-block-start: 0;
+        }
+        .home_logo2{
+            opacity: 1;
+            transform: none;
+            text-align: center;
+            justify-content: end;
+            border:none;
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+

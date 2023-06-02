@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    .titulo_galeria {
+    font-family: 'Noto Serif Grantha', serif;
+    text-shadow: 2px 2px rgb(255, 255, 255) ;
+    padding: 3%;
+    font-size: 50px;
+    font-weight: bold;
+    background: radial-gradient(ellipse,rgb(139, 123, 123),rgb(255, 255, 255),rgb(182, 169, 169));
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 20px;
+    border-style: groove;
+    border: white solid;
+    color: rgb(0, 0, 0);
+    }
+    
+    img {
+    width: 100%;
+    height: 100%;
+    border: double silver;
+    opacity: 0.6;  
+    &:hover {
+        opacity: 1;
+        border: solid 2px white;
+        transform: scale(1.1, 1.1);
+    }
+}
+    
+    .fotos {
+    padding: 1%;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 75%;
+    background-color: rgb(35, 35, 130);
+    border: 2px red solid;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "h1 h2 h2 h3 h3"
+        "v1 h4 h4 h5 h5"
+        "v1 h6 h6 h7 h7"
+        "s1 s2 h8 h8 s3";
+    
+    }
+    .h1 { grid-area: h1; }
+    .h2 { grid-area: h2; }
+    .h3 { grid-area: h3; }
+    .h4 { grid-area: h4; }
+    .h5 { grid-area: h5; }
+    .h6 { grid-area: h6; }
+    .h7 { grid-area: h7; }
+    .h8 { grid-area: h8; }
+    .v1 { grid-area: v1; }
+    .s1 { grid-area: s1; }
+    .s2 { grid-area: s2; }
+    .s3 { grid-area: s3; }  
+
+    .musicuervo{
+        padding: 20rem;
+        text-align: center;
+    }
+    
+    .titulo_musicuervo{
+        padding: 1rem;
+        color: goldenrod;
+        text-align: center;
+        font-size: 80px;
+        text-shadow: 3px 3px black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .musicuervo_estrofa{
+        font-family: 'Dancing Script', cursive;
+        padding: 1rem;
+        margin-top: 5rem;
+        font-size: 60px;
+        font-weight: bold;
+        color:rgb(0, 0, 0);
+        text-shadow: 2px 1px silver;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+}
+
+
