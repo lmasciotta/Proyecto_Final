@@ -8,7 +8,10 @@
     <title>Los Cuervos de Boedo | Galeria</title>
     <meta name="descrption" content="Los Cuervos de Boedo como toda la familia SanLorencista disfrutamos vivir el día a día del club así como también cada fin de semana que juega San Lorenzo en casa, con todo lo que eso significa para nosotros, es un tiempo especial donde llenamos de color, alegía, cánticos y emoción esas 2hs que esperamos ansiosamente toda la semana. Aqui recapturamos algunas imágenes que quedaran para la posteridad así como también compartimos el cancionero de los últimos años con una recapitulación de los mejores hits de la tribuna">
     <meta name="keywords" content="fotos, imagenes, canciones, musicuervo, galeria">
-
+    <meta name="author" content="Lucas, estudiante de Coderhouse" />
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    
     <!-- Favicons -->
     <link rel="shorcut icon" href="../Img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -26,37 +29,42 @@
     <body>    
     <!--:::::Menú de navegación:::::-->
     <header>
-        <nav class="header_nav">
-            <ul class="header_menu">
-                <li class="header_logo"><a href="../index.html"><img src="../Img/icono.jpg" class=icono_nav alt="icono"></a></li>    
-                <li class="header_item"><a  class="header_link" href="../index.html"> Inicio</a></li>
-                <li class="header_item"><a  class="header_link" href="./history.html"> Historia</a></li>
-                <li class="header_item"><a  class="header_link" href="./gallery.html"> Imagenes</a></li>
-                <li class="header_item"><a  class="header_link" href="./associate.html"> Asociate</a></li>
-                <li class="header_item"><a  class="header_link" href="./project.html"> Proyecto VUELTA</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html"><img src="../Img/icono.png" class="icono_nav" alt="icono_nav"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-item nav-link" href="./history.html">Historia</a>
+                    <a class="nav-item nav-link" href="./gallery.html">Imagenes</a>
+                    <a class="nav-item nav-link" href="./associate.html">Asociate</a>
+                    <a class="nav-item nav-link" href="./project.html">Proyecto VUELTA</a>
+                </div>
+            </div>
         </nav>
     </header>
     <!--:::::GALERIA y TITULO:::::-->
-<main>
+<main class="home_galeria">
     <h1 class="titulo_galeria">MUSEO DE FOTOS</h1>   
     <section class="fotos">
-        <img src="../Img/2.jpg" class="h1">
-        <img src="../Img/3.jpg" class="h2">
-        <img src="../Img/4.jpg" class="h3">
-        <img src="../Img/5.jpg" class="h4">
-        <img src="../Img/1.jpg" class="h5">
-        <img src="../Img/6.jpg" class="h6">
-        <img src="../Img/7.jpg" class="h7">
-        <img src="../Img/8.jpg" class="h8">
-        <img src="../Img/9.jpg" class="v1">
-        <img src="../Img/10.jpg" class="s1">
-        <img src="../Img/11.jpg" class="s2">
-        <img src="../Img/12.jpg" class="s3">
+        <img src="../Img/2.jpg" class="h1" alt="Foto_Galeria_1">
+        <img src="../Img/3.jpg" class="h2" alt="Foto_Galeria_2">
+        <img src="../Img/4.jpg" class="h3" alt="Foto_Galeria_3">
+        <img src="../Img/5.jpg" class="h4" alt="Foto_Galeria_4">
+        <img src="../Img/1.jpg" class="h5" alt="Foto_Galeria_5">
+        <img src="../Img/6.jpg" class="h6" alt="Foto_Galeria_6">
+        <img src="../Img/7.jpg" class="h7" alt="Foto_Galeria_7">
+        <img src="../Img/8.jpg" class="h8" alt="Foto_Galeria_8">
+        <img src="../Img/9.jpg" class="v1" alt="Foto_Galeria_9">
+        <img src="../Img/10.jpg" class="s1" alt="Foto_Galeria_10">
+        <img src="../Img/11.jpg" class="s2" alt="Foto_Galeria_11">
+        <img src="../Img/12.jpg" class="s3" alt="Foto_Galeria_12">
     </section>
         <div class="musicuervo">
-            <h2 class="titulo_musicuervo">MUSICUERVO</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/M_JcqFwHJU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="titulo_musicuervo">MUSICUERVO</p>
+            <iframe class="video_musicuervo" src="https://www.youtube.com/embed/M_JcqFwHJU4" title="Video que contiene todas las canciones de tribuna de San Lorenzo"></iframe>
             <p class="musicuervo_estrofa">"dejando mi corazón, alentando hasta el final.." ♫ ♪</p>
         </div>
 </main>
@@ -64,7 +72,7 @@
     <footer>
         <div class="container">
                 <div class="box1" >
-                    <h4>SIGUENOS EN REDES SOCIALES</h4>
+                    <p class="box1_redes">SIGUENOS EN REDES SOCIALES</p>
                             <div class="redes">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -74,7 +82,7 @@
                             </div>
                 </div>
                 <div class="box2">
-                        <h4>CONTACTO</h4>
+                        <p class="box2_redes">CONTACTO</p>
                                 <div class="contacto">  
                                     <p>Teléfonos: (011) 5777-1200 de Lunes a Viernes de 8 a 20 hs.</p>
                                     <p>infosocios@sanlorenzodealmagro.com.ar</a> 
@@ -82,10 +90,10 @@
                 </div>      
         <hr>  
                 <div class="copy"><p>&copy; 2023 LOS CUERVOS DE BOEDO | Hecho por Lucas David Masciotta | Todos los derechos de autor están reservados por el propietario del sitio</p>
-                    <img src="../Img/casla2.png" class="icon">
+                    <img src="../Img/casla2.png" class="icon" alt="LogoFooter">
                 </div>
         </div>
-    </footer>    
+</footer>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2fd444f575.js" crossorigin="anonymous"></script> 
     </body>

@@ -5,8 +5,15 @@
 @import "./project";
 @import "./associate";
 @import "./gallery.scss";
-@import "./mediaqueries";
 @import "./history";
+@import "./mediaquerieheader";
+@import "./mediaquerieindex";
+@import"./mediaquerieassociate";
+/*:::::@import"./mediaqueriehistory";:::::*/
+@import"./mediaquerieproject";
+@import"./mediaqueriegallery";
+
+
 
 /*:::::FUENTES:::::*/
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');

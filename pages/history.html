@@ -8,6 +8,9 @@
         <title>Los Cuervos de Boedo | Historia</title>
         <meta name="descrption" content="Los Cuervos de Boedo hacemos un breve recorrido por los más de 115 años de historia del club, sabemos que en pocas lineas no podemos detallar la inmensidad y todas las proezas que se fueron construyendo en todo este tiempo pero si podemos resaltar los acontecimientos más sobresalientes, San Lorenzo tiene una identidad, un sentido de pertenencia y una riqueza histórica dificil de comparar. Nosotros queremos sin desenfocarnos del presente y sobre todo de lo que viene agradecer todos estos años que pusieron a San Lorenzo en lo más alto del deporte nacional.">
         <meta name="keywords" content="historia, estadio, titulos, equipo, gasometro">
+        <meta name="author" content="Lucas, estudiante de Coderhouse" />
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="Spanish">
         
         <!-- Favicons -->
         <link rel="shorcut icon" href="../Img/favicon.ico">
@@ -23,24 +26,29 @@
         <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>     
     </head>
 <body>
-    <!--:::::BARRA SUPERIOR DE NAVEGACION:::::-->
-    <header>
-        <nav class="header_nav">
-            <ul class="header_menu">
-                <li class="header_logo"><a href="../index.html"><img src="../Img/icono.jpg" class=icono_nav alt="icono"></a></li>    
-                <li class="header_item"><a  class="header_link" href="../index.html"> Inicio</a></li>
-                <li class="header_item"><a  class="header_link" href="./history.html"> Historia</a></li>
-                <li class="header_item"><a  class="header_link" href="./gallery.html"> Imagenes</a></li>
-                <li class="header_item"><a  class="header_link" href="./associate.html"> Asociate</a></li>
-                <li class="header_item"><a  class="header_link" href="./project.html"> Proyecto VUELTA</a></li>
-            </ul>
-        </nav>
-    </header>
-    <br>
+<!--:::::Menú de navegación:::::-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html"><img src="../Img/icono.png" class="icono_nav" alt="icono_nav"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Inicio</a>
+                <a class="nav-item nav-link" href="./history.html">Historia</a>
+                <a class="nav-item nav-link" href="./gallery.html">Imagenes</a>
+                <a class="nav-item nav-link" href="./associate.html">Asociate</a>
+                <a class="nav-item nav-link" href="./project.html">Proyecto VUELTA</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
     <!--:::::TIULO Y SUBTITULO:::::-->
-    <main>
-        <div class="text-warning text-center"><h1>Club Atlético San Lorenzo De Almagro</h1></div>
-        <div class="text-secondary text-center"><h2>1908 - 2023</h2></div>
+    <main class="home_historia">
+        <div class="text-warning text-center"><h1 class="titulo_historia">Club Atlético San Lorenzo De Almagro</h1></div>
+        <div class="text-secondary text-center"><h2 class="subtitulo_año">1908 - 2023</h2></div>
 
     <!--:::::TEXTO E IMAGENES:::::-->
         <!--:::::PRIMERA FILA:::::-->
@@ -57,7 +65,7 @@
         <!--:::::SEGUNDA FILA:::::-->
                 <div class="row">
                         <div class="col-8">
-                            <img src="../Img/historia2.jpg" alt="foto_estadio" class="foto_estadio">
+                            <img src="../Img/historia2.jpg" class="foto_estadio" alt="foto_estadio" >
                         </div>
                         <div class="text-left text-light col-4">
                             <p>El viejo Gasómetro se inauguró hace un siglo, en aquel 1916 que tenía al mundo en guerra, a Albert Einstein publicando su Teoría de la Relatividad y a Hipólito Yrigoyen gobernando a la Argentina. El Gasómetro de Avenida La Plata no tardaría en convertirse en uno de los estadios más importantes del país: cuerpo de madera, corazón de hierro y alma generosa, popular, de Boedo y todo el cielo, un coloso que podía albergar más de 75.000 espectadores. Símbolo del barrio, tuvo su bautismo futbolero el 7 de mayo de aquel año, cuando San Lorenzo venció 2-1 a Estudiantes. Leyendas como Jacobo Urso, Federico Monti y Luis Gianella jugaron esa tarde. El Gasómetro (apodo que sustituyó todo nombre oficial y cuyo origen tiene que ver con su similitud con los depósitos de gas de aquel tiempo) fue sede de la Copa América en sus ediciones de 1929, 1937 y 1946. En su césped brillaron equipos legendarios, como el de Farro-Pontoni-Martino, los Pistoleros del 59, los Carasucias y Los Matadores de los 60’s, el bicampeón del 72, y a su alrededor vibró el deporte en su totalidad, además de los carnavales de tango y jazz, los recitales inolvidables (desde Carlos Santana hasta Sandro). Su último partido allí se jugó en 1979 (empate sin goles ante Boca) y el sueño latente es que, en poco tiempo, la pelota vuelva a rodar en ese predio. “Vamos a volver”, promete el pueblo sanlorencista. Y así será, para emoción de millones alrededor del mundo.</p>
@@ -89,14 +97,14 @@
                     </div>
                 </div>        
     </section>
-        <img src="../Img/logo.png" class="w-25 mx-auto d-block" alt="logo">
+        <img src="../Img/logo.png" class="w-25 mx-auto d-block" alt="EscudoSL">
 </main>   
             
 <!--:::::Pie de Página:::::-->
 <footer>
     <div class="container">
             <div class="box1" >
-                <h4>SIGUENOS EN REDES SOCIALES</h4>
+                <p class="box1_redes">SIGUENOS EN REDES SOCIALES</p>
                         <div class="redes">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
@@ -106,7 +114,7 @@
                         </div>
             </div>
             <div class="box2">
-                    <h4>CONTACTO</h4>
+                    <p class="box2_redes">CONTACTO</p>
                             <div class="contacto">  
                                 <p>Teléfonos: (011) 5777-1200 de Lunes a Viernes de 8 a 20 hs.</p>
                                 <p>infosocios@sanlorenzodealmagro.com.ar</a> 
@@ -114,7 +122,7 @@
             </div>      
     <hr>  
             <div class="copy"><p>&copy; 2023 LOS CUERVOS DE BOEDO | Hecho por Lucas David Masciotta | Todos los derechos de autor están reservados por el propietario del sitio</p>
-                <img src="../Img/casla2.png" class="icon">
+                <img src="../Img/casla2.png" class="icon" alt="LogoFooter">
             </div>
     </div>
 </footer>  

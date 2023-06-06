@@ -5,7 +5,7 @@
 }
 
 
-.home {
+.home_proyecto{
     padding: 1rem;
     .home_video{
         font-size:70px;
@@ -17,9 +17,9 @@
     }
     }
     
-    .video {
+    .video_proyecto{
         position: relative;
-        padding: 0%;
+        padding: 1%;
         margin: 0 auto;
         text-align: center;
         iframe {
@@ -62,6 +62,8 @@
     }
 
     .home_pie {
+        margin: 0 auto;
+        text-align: center;
         padding: 4rem;
         font-size:120px;
         color:silver;
@@ -69,6 +71,7 @@
         font-family: 'Foldit', cursive;
     }
     .home_cuervo {
+        text-align: center;
         display: flex;
         padding: 1rem;
         margin-top: 5rem;

@@ -8,9 +8,9 @@
     <title>Los Cuervos de Boedo | Asociate</title>
     <meta name="descrption" content="Los Cuervos de Boedo impulsa la campaña para sumar mas socios a la institución, sabemos que San Lorenzo necesita de todos para poder seguir avanzando y construyendo un futuro mejor. El Gallego Insua idolo del club esta semana volvió a asociarse luego de estar varios años fuera del país. ¿Que esperás vos? Sigamos entre todos construyendo un San Lorenzo cada día más grande. Somos muchos y somos familia, este sentido de pertenencia necesita de tu colaboración para avanzar en todos los desafíos que el club tiene por delante!">
     <meta name="keywords" content="socio, formulario, registro, insua">
+    <meta name="author" content="Lucas, estudiante de Coderhouse" />
     <meta name="robots" content="index, follow">
     <meta name="language" content="Spanish">
-    <meta name="author" content="Lucas David Masciotta">
 
     <!-- Favicons -->
     <link rel="shorcut icon" href="../Img/favicon.ico">
@@ -26,106 +26,117 @@
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 </head>
 <body> 
-    
 <!--:::::Menú de navegación:::::-->
-    <header>
-        <nav class="header_nav">
-            <ul class="header_menu">
-                <li class="header_logo"><a href="../index.html"><img src="../Img/icono.jpg" class=icono_nav alt="icono"></a></li>    
-                <li class="header_item"><a  class="header_link" href="../index.html"> Inicio</a></li>
-                <li class="header_item"><a  class="header_link" href="./history.html"> Historia</a></li>
-                <li class="header_item"><a  class="header_link" href="./gallery.html"> Imagenes</a></li>
-                <li class="header_item"><a  class="header_link" href="./associate.html"> Asociate</a></li>
-                <li class="header_item"><a  class="header_link" href="./project.html"> Proyecto VUELTA</a></li>
-            </ul>
-        </nav>
-    </header>
-<!--:::::Formulario:::::-->
-<main class="formulario"> 
-    <div class="formulario_cabecera"> 
-    <video class="video_asociate" controls><source src="/Img/video_asociate.mp4"></video>
-    <img src="../Img/CuervoAsociate.png" class="cuervo_asociate"> 
-    </div>
-    <h2 class="display-2 text-light">El Gallego ya es socio, ¿vos que estás esperando?</h2>
-        <h1 class="formulario_titulo">Asociate!</h1>
-<div class="formulario_registro">  
-    <div class="formulario_texto">    
-        <h3>SOCIA/O SIMPLE:</h3>
-            <p>En los momentos más duros de su historia, la gloriosa gente de San Lorenzo siempre estuvo ahí para poner el pecho y salir a flote con dignidad.</p><div> Hoy, que la realidad nos vuelve a poner a prueba, tu aporte sería fundamental para el que Club le haga frente a la crisis por la pandemia de coronavirus</div><p>¡Asociate!</p>
-            
-        <form class="formulario_registro">
-        <label>
-            <div>
-                <img src="../Img/ASOCIATE.png" class="formulario_logo">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html"><img src="../Img/icono.png" class="icono_nav" alt="icono_nav"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Inicio</a>
+                <a class="nav-item nav-link" href="./history.html">Historia</a>
+                <a class="nav-item nav-link" href="./gallery.html">Imagenes</a>
+                <a class="nav-item nav-link" href="./associate.html">Asociate</a>
+                <a class="nav-item nav-link" href="./project.html">Proyecto VUELTA</a>
             </div>
-        </label>
-            <label>
-                <div>
-                    <h4>NOMBRE</h4>
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre">
-                </div>
-            </label>   
-                <label>
-                    <div>
-                        <h4>E-Mail</h4>
-                            <input type="text" name="E-mail" id="Mail" placeholder="Ingrese su dirección de correo electrónico">
-                    </div>
-                </label>
-                <label>
-                    <div>    
-                        <h4>DNI</h4>
-                            <input type="number" name="DNI" id="DNI" placeholder="Ingrese su número de documento">
-                    </div>
-                </label>    
-                <label>
-                    <div>    
-                        <h4>TELEFONO</h4>
-                        <input type="number" name="Telefono" id="Telefono" placeholder="Ingrese su número de teléfono">
-                    </div>    
-                </label>    
-<!--:::::Boton Registro:::::-->
-            <label class="formulario_terminos">
-                <p>Estoy de acuerdo con los Términos y Condiciones</p>
-                <input type="checkbox" id="terminos" name="terminos">
+        </div>
+    </nav>
+</header>
+<!--:::::Formulario:::::-->
+<main class="home_formulario">
+  <h1 class="formulario_titulo">Asociate!</h1>
+    <div class="formulario_cabecera">
+      <div class="formulario_spot">
+      <video class="video_asociate" controls><source src="/Img/video_asociate.mp4"></video>
+      <img src="../Img/CuervoAsociate.png" class="cuervo_asociate" alt="cuervo_asociate">
+      </div>
+        <P class="display-2 text-light">El Gallego ya es socio, ¿vos? ¿que estás esperando?</P>
+    </div>  
+    <div class="formulario_registro">
+      <div class="formulario_texto">
+        <p class="formulario_subtitulo">SOCIA/O SIMPLE:</p>
+        <p>En los momentos más duros de su historia, la gloriosa gente de San Lorenzo siempre estuvo ahí para poner el pecho y salir a flote con dignidad.</p>
+        <div>Hoy, que la realidad nos vuelve a poner a prueba, tu aporte sería fundamental para el que Club le haga frente a la crisis por la pandemia de coronavirus</div>
+        <p>¡Asociate!</p>
+  
+        <form class="formulario_registro">
+          <label>
+            <div>
+              <img src="../Img/ASOCIATE.png" class="formulario_logo" alt="Imagen_Formulario">
+            </div>
+          </label>
+          <label>
+            <div>
+              <h4>NOMBRE</h4>
+              <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" class="form-control">
+            </div>
+          </label>
+          <label>
+            <div>
+              <h4>E-Mail</h4>
+              <input type="text" name="E-mail" id="Mail" placeholder="Ingrese su dirección de correo electrónico" class="form-control">
+            </div>
+          </label>
+          <label>
+            <div>
+              <h4>DNI</h4>
+              <input type="number" name="DNI" id="DNI" placeholder="Ingrese su número de documento" class="form-control">
+            </div>
+          </label>
+          <label>
+            <div>
+              <h4>TELEFONO</h4>
+              <input type="number" name="Telefono" id="Telefono" placeholder="Ingrese su número de teléfono" class="form-control">
+            </div>
+          </label>
+          <!--:::::Boton Registro:::::-->
+          <div class="form-check">
+            <div class="form-terminos">Estoy de acuerdo con los Términos y Condiciones</div>
+            <label class="form-check-label text-center">
+              <input type="checkbox" id="terminos" name="terminos" class="form-check-input">
             </label>
-            <button type= "submit" class="formulario_boton">Registrarse</button>
+          </div>
+          <button type="submit" class="btn btn-primary formulario_boton">Registrarse</button>
         </form>
+  
         <div class="formulario_pie">
-            <img src="../Img/cuervo7.gif" class="formulario_cuervo">
-            <img src="../Img/CaslaAsociate.png" class="formulario_casla">
-        </div>     
-    </div>          
-</div>
-</main> 
-
+          <img src="../Img/cuervo7.gif" class="formulario_cuervo" alt="cuervo_volando">
+          <img src="../Img/CaslaAsociate.png" class="formulario_casla" alt="Logo_CASLA"> 
+        </div>
+      </div>
+    </div>
+  </main>
+  
 
 
     <!--:::::Pie de Página:::::-->
     <footer>
-        <div class="container">
-                <div class="box1" >
-                    <h4>SIGUENOS EN REDES SOCIALES</h4>
-                            <div class="redes">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                <a href="#"><i class="fa fa-whatsapp"></i></a>
-                            </div>
-                </div>
-                <div class="box2">
-                        <h4>CONTACTO</h4>
-                                <div class="contacto">  
-                                    <p>Teléfonos: (011) 5777-1200 de Lunes a Viernes de 8 a 20 hs.</p>
-                                    <p>infosocios@sanlorenzodealmagro.com.ar</a> 
-                                </div>                         
-                </div>      
-        <hr>  
-                <div class="copy"><p>&copy; 2023 LOS CUERVOS DE BOEDO | Hecho por Lucas David Masciotta | Todos los derechos de autor están reservados por el propietario del sitio</p>
-                    <img src="../Img/casla2.png" class="icon">
-                </div>
-        </div>
-    </footer>    
+      <div class="container">
+              <div class="box1" >
+                  <p class="box1_redes">SIGUENOS EN REDES SOCIALES</p>
+                          <div class="redes">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-youtube"></i></a>
+                              <a href="#"><i class="fa fa-whatsapp"></i></a>
+                          </div>
+              </div>
+              <div class="box2">
+                      <p class="box2_redes">CONTACTO</p>
+                              <div class="contacto">  
+                                  <p>Teléfonos: (011) 5777-1200 de Lunes a Viernes de 8 a 20 hs.</p>
+                                  <p>infosocios@sanlorenzodealmagro.com.ar</a> 
+                              </div>                         
+              </div>      
+      <hr>  
+              <div class="copy"><p>&copy; 2023 LOS CUERVOS DE BOEDO | Hecho por Lucas David Masciotta | Todos los derechos de autor están reservados por el propietario del sitio</p>
+                  <img src="../Img/casla2.png" class="icon" alt="LogoFooter">
+              </div>
+      </div>
+</footer>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
 <script src="https://kit.fontawesome.com/2fd444f575.js" crossorigin="anonymous"></script>
 </body>

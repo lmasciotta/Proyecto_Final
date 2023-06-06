@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px){
+    .home_formulario{
+        .formulario_titulo{
+            margin: 0 auto;
+            text-align: center;
+            font-size: 3rem;
+        }
+        .formulario_cabecera{
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            .video_asociate{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .cuervo_asociate{
+                display: none;
+            }
+            .display-2{
+                text-align: center;
+                font-size: 30px;
+                margin:0 auto;
+            }
+        }   
+        .formulario_registro{
+            .formulario_texto{
+                width: 100%;
+                margin: 0 auto;
+            } 
+            .formulario_logo{
+                padding: 1rem;
+                width: 100%;
+                opacity: 1;
+                transition: all 3s;
+                &:hover{
+                transform: scale(0.9,0.9);
+                } 
+            }
+        .form-check{
+            font-size:14px;
+            padding: 1rem;
+            margin: 0 auto;
+        }    
+        }
+    }
+}

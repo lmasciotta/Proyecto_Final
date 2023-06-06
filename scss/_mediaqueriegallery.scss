@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; }
+
+    @media (max-width: 768px) {
+        .home_galeria{
+            margin-top: 4rem;
+            width: 100%;
+            height: auto;
+            .titulo_galeria{
+                width: 100%;
+                font-size: 2rem;
+                align-items: center;
+                margin: 0 auto;
+                height: auto;
+            }
+            .fotos{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+            .musicuervo{
+                display: none;
+            }
+            }
+        }
+    

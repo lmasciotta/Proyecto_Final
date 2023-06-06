@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; }
+
+@media (max-width: 768px) {
+    .home_historia {
+        width: 100%; 
+        text-align: center;   
+    .text-warning {   
+        &.text-center {
+        text-align: center;
+        color: $color-warning;
+        text-decoration: underline;
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 3px 2px rgb(124, 96, 19);
+        }
+        }
+    }
+    
+    .text-secondary {
+        &.text-center {
+        text-align: center;
+        color: $color-secondary;
+        h2 {
+            font-size: 12px;
+            text-shadow: 2px 1px rgb(184, 183, 183);
+            padding: 1rem;
+        }
+        }
+    }
+    
+    .texto {
+        display: inline-block;
+        .row {
+            width: 100%;
+        .text-left {
+            border-style: groove;
+            border-color: $color-warning;
+            &.text-light {
+            color: #fff;
+            }
+            
+            &.col-8 {
+            width: 65.76667%;
+            }
+            
+            p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            text
+            }
+        }
+        
+        .col-4 {
+            width: 33%;
+            border-style: groove;
+            border-color: $color-warning; 
+            .foto_plantel {
+            margin-top: 4rem;
+            padding: 1rem;
+            opacity: 1;
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+            &:hover{
+                transform: none;
+                opacity: 1.1;
+            }
+            }
+        }
+        }
+        
+    
+        .col-8 {
+            padding: 1rem;
+            width: 66.66667%;
+            border-style: groove;
+            border-color: $color-warning; 
+            .foto_estadio {
+            margin-top: 6rem;
+            padding: 1rem;
+            opacity: 1;
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+            &:hover{
+                transform: none;
+                opacity: 1.1;
+            }
+            }
+        }
+        
+        .text-left {
+            &.text-light {
+            color: #fff;
+            }
+            
+            &.col-4 {
+            width: 100%;
+            }
+        }
+        }
+        
+        .text-left {
+            &.text-light {
+            color: #fff;
+            }
+            
+            &.col-6 {
+            width: 100%;
+            }
+            
+            p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            }
+        }
+        
+        .col-6 {
+            width: 100%;
+            border-style: groove;
+            border-color: $color-warning; 
+            .foto_historial {
+            padding: 1rem;
+            opacity: 1;
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+            &:hover{
+                transform: none;
+                opacity: 1.1;
+            }
+            }
+        }
+        }
+        
+        .row:last-child {
+        .text-left {
+            &.text-light {
+            color: #fff;
+            }
+            
+            &.col-12 {
+            width: 100%;
+            
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+            }
+        }
+        }
+    
+    img.w-25 {
+        padding: 5rem;
+        width: 25%;
+        border: none;
+        opacity: 1;
+        margin: 0 auto;
+        z-index: 0;
+        animation: pulse 1s infinite;
+        &:hover {
+            width: 25%;
+            transform: none;
+            border: none;
+        }
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+}
+

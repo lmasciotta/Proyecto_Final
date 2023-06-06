@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main {
+.home_galeria {
     .titulo_galeria {
     font-family: 'Noto Serif Grantha', serif;
     text-shadow: 2px 2px rgb(255, 255, 255) ;
@@ -66,10 +66,10 @@ main {
     .s3 { grid-area: s3; }  
 
     .musicuervo{
+        display: flex;
+        flex-direction: column;
         padding: 20rem;
         text-align: center;
-    }
-    
     .titulo_musicuervo{
         padding: 1rem;
         color: goldenrod;
@@ -78,17 +78,24 @@ main {
         text-shadow: 3px 3px black;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    .video_musicuervo{
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
     .musicuervo_estrofa{
         font-family: 'Dancing Script', cursive;
         padding: 1rem;
         margin-top: 5rem;
-        font-size: 60px;
+        font-size: 24px;
         font-weight: bold;
         color:rgb(0, 0, 0);
         text-shadow: 2px 1px silver;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
     }
+}
 }
 
 
