@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+/*:::::FUENTES:::::*/
+
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
@@ -8,6 +11,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Foldit&display=swap");
+
+
+/*:::::HEADER:::::*/
+
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +49,27 @@ header nav {
             transform: scale(1.1);
             transition: transform 0.3s ease; }
 
+/*:::::BOTÓN FLOTANTE:::::*/
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; }
+
+#scrollToTop img {
+  width: 50px;
+  height: 50px; }
+
+#top {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+
+/*:::::BODY:::::*/
+
 * {
   margin: 0;
   padding: 0;
@@ -49,10 +77,11 @@ header nav {
 
 body {
   position: relative;
-  background-image: url(../Img/fondo2.jpg);
+  background-image: url("../Img/fondo2.jpg");
   background-size: cover;
   margin: 0 auto; }
 
+/*:::::FOOTER:::::*/  
 * {
   margin: 0;
   padding: 0;
@@ -116,6 +145,7 @@ footer {
         align-items: center;
         text-align: center; }
 
+/*:::::PAGINA INDEX:::::*/        
 * {
   margin: 0;
   padding: 0;
@@ -218,6 +248,7 @@ footer {
       opacity: 1;
       width: auto; }
 
+/*:::::PROYECTO VUELTA:::::*/      
 * {
   margin: 0;
   padding: 0;
@@ -302,6 +333,8 @@ footer {
     width: 30%;
     text-align: center; }
 
+
+/*:::::PAGINA ASOCIATE:::::*/    
 * {
   margin: 0;
   padding: 0;
@@ -389,8 +422,11 @@ footer {
           text-align: center; }
           .home_formulario .formulario_registro .formulario_texto .formulario_registro .formulario_logo:hover {
             transform: scale(1.04, 1.04); }
-        .home_formulario .formulario_registro .formulario_texto .formulario_registro .formulario_terminos {
-          padding: 2rem; }
+        .home_formulario .formulario_registro .formulario_texto .formulario_registro .form-terminos {
+          margin-top: 18px;
+          text-align: center;
+          padding: 1px;
+          font-size: 12px; }
         .home_formulario .formulario_registro .formulario_texto .formulario_registro .formulario_boton {
           color: black;
           background-color: gold;
@@ -424,6 +460,8 @@ footer {
       width: 28%;
       margin: 0 auto; }
 
+
+/*:::::PÁGINA GALERÍA DE FOTOS:::::*/  
 * {
   margin: 0;
   padding: 0;
@@ -466,7 +504,10 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 10px;
-  grid-template-areas: "h1 h2 h2 h3 h3" "v1 h4 h4 h5 h5" "v1 h6 h6 h7 h7" "s1 s2 h8 h8 s3"; }
+  grid-template-areas: "h1 h2 h2 h3 h3"
+"v1 h4 h4 h5 h5"
+"v1 h6 h6 h7 h7"
+"s1 s2 h8 h8 s3"; }
 
 .home_galeria .h1 {
   grid-area: h1; }
@@ -505,39 +546,49 @@ footer {
   grid-area: s3; }
 
 .home_galeria .musicuervo {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 20rem;
   text-align: center; }
   .home_galeria .musicuervo .titulo_musicuervo {
+    margin: 0 auto;
     padding: 1rem;
     color: goldenrod;
     text-align: center;
+    width: 100%;
     font-size: 80px;
     text-shadow: 3px 3px black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-  .home_galeria .musicuervo .video_musicuervo {
-    text-align: center;
-    margin: 0 auto;
-    width: 50%;
-    height: auto; }
+  .home_galeria .musicuervo iframe {
+    width: 660px;
+    height: 315px; }
+    .home_galeria .musicuervo iframe .video_musicuervo {
+      position: relative;
+      padding: 1%;
+      margin: 0 auto;
+      text-align: center; }
   .home_galeria .musicuervo .musicuervo_estrofa {
+    text-align: center;
     font-family: 'Dancing Script', cursive;
     padding: 1rem;
     margin-top: 5rem;
     font-size: 24px;
     font-weight: bold;
     color: black;
+    width: 95%;
     text-shadow: 2px 1px silver;
     background-color: white;
     border-radius: 10px; }
 
+/*:::::PÁGINA HISTORIA:::::*/    
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 .home_historia {
+  margin-top: 1rem;
   padding: 2rem; }
   .home_historia .text-warning.text-center {
     text-align: center;
@@ -554,84 +605,72 @@ footer {
       font-size: 34px;
       text-shadow: 2px 1px #b8b7b7;
       padding: 1rem; }
-  .home_historia .texto .row {
-    width: 100%; }
-    .home_historia .texto .row .text-left {
-      border-style: groove;
-      border-color: #ff9800; }
-      .home_historia .texto .row .text-left.text-light {
-        color: #fff; }
-      .home_historia .texto .row .text-left.col-8 {
-        width: 65.76667%; }
-      .home_historia .texto .row .text-left p {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        font-style: italic;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px; }
-    .home_historia .texto .row .col-4 {
-      width: 33%;
-      border-style: groove;
-      border-color: #ff9800; }
-      .home_historia .texto .row .col-4 .foto_plantel {
-        margin-top: 4rem;
-        padding: 1rem;
-        opacity: 1;
-        width: 100%;
-        height: auto;
-        opacity: 0.9; }
-        .home_historia .texto .row .col-4 .foto_plantel:hover {
-          transform: none;
-          opacity: 1.1; }
-  .home_historia .texto .col-8 {
+  .home_historia .historia_SL {
+    margin-top: 1rem;
+    background-color: #ababab;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    border: groove gold;
     padding: 1rem;
-    width: 66.66667%;
-    border-style: groove;
-    border-color: #ff9800; }
-    .home_historia .texto .col-8 .foto_estadio {
-      margin-top: 6rem;
-      padding: 1rem;
-      opacity: 1;
+    border-radius: 10px; }
+    .home_historia .historia_SL .fila1 {
+      margin-top: 1rem;
       width: 100%;
-      height: auto;
-      opacity: 0.9; }
-      .home_historia .texto .col-8 .foto_estadio:hover {
-        transform: none;
-        opacity: 1.1; }
-  .home_historia .texto .text-left.text-light {
-    color: #fff; }
-  .home_historia .texto .text-left.col-4 {
-    width: 33.33333%; }
-  .home_historia .text-left.text-light {
-    color: #fff; }
-  .home_historia .text-left.col-6 {
-    width: 50%; }
-  .home_historia .text-left p {
-    margin-top: 0;
-    margin-bottom: 1rem; }
-  .home_historia .col-6 {
-    width: 50%;
-    border-style: groove;
-    border-color: #ff9800; }
-    .home_historia .col-6 .foto_historial {
-      padding: 1rem;
-      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      color: black; }
+      .home_historia .historia_SL .fila1 .foto_plantel {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: solid #4a4b4e; }
+    .home_historia .historia_SL .fila2 {
+      margin-top: 1rem;
       width: 100%;
-      height: auto;
-      opacity: 0.9; }
-      .home_historia .col-6 .foto_historial:hover {
-        transform: none;
-        opacity: 1.1; }
-
-.row:last-child .text-left.text-light {
-  color: #fff; }
-
-.row:last-child .text-left.col-12 {
-  width: 100%; }
-  .row:last-child .text-left.col-12 p {
-    margin-top: 0;
-    margin-bottom: 1rem; }
+      display: flex;
+      flex-direction: column;
+      color: black; }
+      .home_historia .historia_SL .fila2 .foto_estadio {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: solid #4a4b4e; }
+    .home_historia .historia_SL .fila3 {
+      margin-top: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      color: black; }
+      .home_historia .historia_SL .fila3 .foto_historial {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: solid #4a4b4e; }
+    .home_historia .historia_SL .fila4 {
+      margin-top: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      color: black; }
+    .home_historia .historia_SL .fila5 {
+      margin-top: 1rem;
+      padding: 1rem;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+    .home_historia .historia_SL .camisetas_historial {
+      width: 50%;
+      border: solid #132e7e;
+      height: 90%; }
+    .home_historia .historia_SL .escudo_historial {
+      width: 50%;
+      border: solid #701e09;
+      height: 90%; }
 
 img.w-25 {
   padding: 5rem;
@@ -654,6 +693,7 @@ img.w-25 {
   100% {
     transform: scale(1); } }
 
+/*:::::MEDIA QUERIE HEADER:::::*/ 
 * {
   margin: 0;
   padding: 0;
@@ -665,17 +705,28 @@ img.w-25 {
     nav.navbar .icono_nav {
       width: 4rem;
       height: auto; }
-    nav.navbar .navbar-collapse ul.navbar-nav {
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto;
-      padding: auto;
-      transition: color 0.3s ease-in-out; }
-      nav.navbar .navbar-collapse ul.navbar-nav .nav-item {
-        margin: 10px 0; }
-        nav.navbar .navbar-collapse ul.navbar-nav .nav-item .nav-link {
-          height: auto; } }
+    nav.navbar .navbar-collapse {
+      background-color: white;
+      z-index: 1;
+      border: groove;
+      border-radius: 10px;
+      text-align: center;
+      padding: 1px;
+      width: 100%;
+      align-items: center; }
+      nav.navbar .navbar-collapse ul.navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: auto;
+        transition: color 0.3s ease-in-out; }
+        nav.navbar .navbar-collapse ul.navbar-nav .nav-item {
+          margin: 10px 0; }
+          nav.navbar .navbar-collapse ul.navbar-nav .nav-item .nav-link {
+            height: auto; } }
 
+
+/*:::::MEDIA QUERIE PAGINA INDEX:::::*/             
 * {
   margin: 0;
   padding: 0;
@@ -781,10 +832,12 @@ img.w-25 {
       transform: none;
       opacity: 1; } }
 
+/*:::::MEDIA QUERIE PAGINA ASOCIATE:::::*/      
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
 
 @media (max-width: 768px) {
   .home_formulario .formulario_titulo {
@@ -820,7 +873,8 @@ img.w-25 {
     padding: 1rem;
     margin: 0 auto; } }
 
-/*:::::@import"./mediaqueriehistory";:::::*/
+
+/*:::::MEDIA QUERIE PAGINA PROYECTO VUELTA:::::*/ 
 * {
   margin: 0;
   padding: 0;
@@ -875,6 +929,9 @@ img.w-25 {
       width: 40%;
       text-align: center; } }
 
+
+/*:::::MEDIA QUERIE PAGINA GALERÍA:::::*/ 
+
 * {
   margin: 0;
   padding: 0;
@@ -899,4 +956,4 @@ img.w-25 {
     .home_galeria .musicuervo {
       display: none; } }
 
-/*:::::FUENTES:::::*/
+

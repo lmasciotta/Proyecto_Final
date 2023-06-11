@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+$imagen-fondo: url("../Img/fondo2.jpg");
 
 body{
     position: relative;
-    background-image: url(../Img/fondo2.jpg);
+    background-image: $imagen-fondo;
     background-size:cover;
     margin:0 auto;
 }
+
+

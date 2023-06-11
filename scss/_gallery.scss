@@ -66,36 +66,43 @@
     .s3 { grid-area: s3; }  
 
     .musicuervo{
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         padding: 20rem;
         text-align: center;
-    .titulo_musicuervo{
+        .titulo_musicuervo{
+        margin: 0 auto;
         padding: 1rem;
         color: goldenrod;
         text-align: center;
         font-size: 80px;
         text-shadow: 3px 3px black;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .video_musicuervo{
-        text-align: center;
+    }   
+    iframe {
+        width: 660px;
+        height: 315px;
+        .video_musicuervo{
+        position: relative;
+        padding: 1%;
         margin: 0 auto;
-        width: 50%;
-        height: auto;
+        text-align: center;
+
     }
-    .musicuervo_estrofa{
+    }
+        .musicuervo_estrofa{    
+        text-align: center;
         font-family: 'Dancing Script', cursive;
         padding: 1rem;
         margin-top: 5rem;
         font-size: 24px;
         font-weight: bold;
         color:rgb(0, 0, 0);
+        width: 95%;
         text-shadow: 2px 1px silver;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
+        }
     }
 }
-}
-
-
